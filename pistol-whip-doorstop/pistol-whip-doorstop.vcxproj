@@ -163,7 +163,7 @@
       <ModuleDefinitionFile>proxy.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
-      <Command>ren $(TargetPath) winhttp.dll</Command>
+      <Command>xcopy $(TargetPath) $(TargetDir)winhttp.dll* /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

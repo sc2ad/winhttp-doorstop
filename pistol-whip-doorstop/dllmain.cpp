@@ -13,7 +13,7 @@
 extern "C" IMAGE_DOS_HEADER __ImageBase; // This is provided by MSVC with the infomration about this DLL
 
 constexpr auto target_name = "GameAssembly";
-constexpr auto modloader_name = "Modloader.dll";
+constexpr auto modloader_name = "MODLOADER.dll";
 constexpr auto modloader_load = "load";
 
 std::atomic<bool> run = false;
